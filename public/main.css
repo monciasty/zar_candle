@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+footer {
+    margin-top: 65px;
+    margin-left: 15px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 1px #AC9181;
+}
+
+.company-container {
+    display: flex;
+    padding: 20px;
+    width: 50%;
+}
+
+.company-container img {
+    width: 60px;
+    height: 45px;
+}
+
+.socialmedia-container {
+    display: flex;
+    padding: 20px;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.baner-container {
+    width: 105%;
+    height: auto;
+    display: flex;
+    background-color: #AC9181;
+    margin-top: 90px;
+    padding: 0px 20px;
+}
+
+.baner-container-photo {
+    position: relative;
+    bottom: 45px;
+    border-radius: 5px;
+}
+
+.baner-container-photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.baner-container-text p {
+    font-size: 12px;
+}
+
+.baner-container-text h1 {
+    position: relative;
+    bottom: 45px;
+    left: 27px;
+    transform: rotate(345deg);
+    transform-origin: center;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 40px;
+    max-width: 95%;
+    height: 150px;
+}
+
+.candles-container {
+    display: flex;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.candles-description-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.candles-description-container p {
+    font-size: 12px;
+}
+
+.order-container {
+    margin-top: 40px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formvalue-container input {
+    font-size: 12px;
+    padding: 8px 10px;
+    border-radius: 15px;
+    background-color: #AC9181;
+    border: none;
+    color: white;
+    width: 80%;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formvalue-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.candle {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px;
+}
+
+.candle label {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.candle input {
+    width: 20%;
+    border: none;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+::-webkit-input-placeholder {
+    color: white; /* Kolor placeholdera dla Chrome/Safari */
+}
+
+.candlevalue-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.candlebutton-container {
+    display: flex;
+    justify-content: center;
+}
+
+.candlebutton-container button {
+    background-color: #AC9181;
+    width: 40%;
+    height: 25px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+
+.order-container h2 {
+    margin-bottom: 20px;
+}
+
+.candles-photo-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-swiper {
+    display: flex;
+    max-width: fit-content;
+}
+
+.swiper-slide {
+    width: 169px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
