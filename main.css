@@ -180,7 +180,7 @@ footer {
 }
 
 ::-webkit-input-placeholder {
-    color: white; /* Kolor placeholdera dla Chrome/Safari */
+    color: white;
 }
 
 .candlevalue-container {
