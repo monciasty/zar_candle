@@ -1,7 +1,7 @@
 var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
-    clickable: true, // Optional: makes pagination bullets clickable
+    clickable: true, 
   },
   on: {
     slideChange: function() {
@@ -20,8 +20,8 @@ var swiper = new Swiper(".mySwiper", {
       document.getElementById('headTitle').innerText = slideContent.title;
       document.getElementById('candleDescr').innerText = slideContent.description;
 
-      // Update pagination on slide change
-      this.pagination.update(); // Ensure pagination updates correctly
+     
+      this.pagination.update();
     }
   }
 });
@@ -43,8 +43,8 @@ function setupCounter(decrementId, incrementId, inputId) {
           decrementButton.style.color = '#ffffff';
 
             setTimeout(() => {
-              decrementButton.style.backgroundColor = '#ffffff'; // Pierwotny kolor tła
-              decrementButton.style.color = '#AC9181'; // Pierwotny kolor tekstu
+              decrementButton.style.backgroundColor = '#ffffff'; 
+              decrementButton.style.color = '#AC9181'; 
           }, 100);
 
       });
@@ -57,8 +57,8 @@ function setupCounter(decrementId, incrementId, inputId) {
           incrementButton.style.color = '#ffffff';
           
           setTimeout(() => {
-            incrementButton.style.backgroundColor = '#ffffff'; // Pierwotny kolor tła
-            incrementButton.style.color = '#AC9181'; // Pierwotny kolor tekstu
+            incrementButton.style.backgroundColor = '#ffffff'; 
+            incrementButton.style.color = '#AC9181'; 
         }, 100);
 
       });
