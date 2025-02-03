@@ -64,12 +64,14 @@ footer {
     position: relative;
     bottom: 45px;
     border-radius: 5px;
+    overflow: hidden; /* Ukrywa nadmiarowy obraz */
 }
 
 .baner-container-photo img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 100%; /* Wypełnia szerokość kontenera */
+    height: auto; /* Zachowuje proporcje */
+    object-fit: cover; /* Wypełnia kontener, przycinając obraz */
+    border-radius: 50%; /* Zaokrąglenie obrazu */
 }
 
 .baner-container-text {
@@ -180,7 +182,7 @@ footer {
 }
 
 ::-webkit-input-placeholder {
-    color: white;
+    color: white; /* Kolor placeholdera dla Chrome/Safari */
 }
 
 .candlevalue-container {
@@ -221,6 +223,7 @@ footer {
 .main-swiper {
     display: flex;
     max-width: fit-content;
+    max-width: 240px;
 }
 
 .swiper-slide {
@@ -252,6 +255,7 @@ footer {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 5px;
+
 }
 
 .in-dec-container button {
@@ -259,7 +263,7 @@ footer {
     background-color: white;
     border-radius: 50%;
     width: 15%;
-    font-size: 15px;
+    font-size: 20px;
     color: #AC9181;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
