@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
 
   <title>zar_candle</title>
 </head>
@@ -24,6 +29,7 @@
         </div>
 
         <div class="socialmedia-container">
+            <p class="social-text">Check more</p>
             <a href="https://www.instagram.com/zar_candles_sisters/" target="_blank">
                 <img src="public/images/instagram.png" alt="Instagram Logo">
             </a>
@@ -34,7 +40,6 @@
 
         <div class="baner-container-text">
 
-            <h1>Hello!</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto ipsum sint enim nisi atque voluptate explicabo sit doloribus</p>
 
         </div>
@@ -47,7 +52,10 @@
 
     </div>
 
+    <h2 id="section-candles-title">Check our candles</h2>
+
     <div class="product-container">
+        
         <div class="candles-photo-container">
             <div class="swiper mySwiper main-swiper">
                 <div class="swiper-wrapper">
@@ -66,9 +74,9 @@
                         <img src="public/images/candles_three.png" alt="Instagram Logo" >
                     </a>
                   </div>
-                  
                 </div>
-              </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     
         <div class="candles-description-container">
@@ -80,7 +88,7 @@
 
     <div class="order-container">
 
-        <h2>Order something from us!</h2>
+        <h2 id="section-order-title">Order something from us!</h2>
 
         <div class="form-container">
 
@@ -95,19 +103,35 @@
                         <div class="candlevalue-container">
                             <div class="candle">
                                 <label for="candleX">Candle X:</label>
-                                <input type="number" id="candleX" value="0" min="1">
+                                <div class="in-dec-container">
+                                    <button type="button" id="decrementX">-</button>
+                                    <input type="number" id="candleX" value="0" min="0">
+                                    <button type="button" id="incrementX">+</button>
+                                </div>
                             </div>
                             <div class="candle">
                                 <label for="candleY">Candle Y:</label>
-                                <input type="number" id="candleY" value="0" min="0">
+                                <div class="in-dec-container">
+                                    <button type="button" id="decrementY">-</button>
+                                    <input type="number" id="candleY" value="0" min="0">
+                                    <button type="button" id="incrementY">+</button>
+                                </div>
                             </div>
                             <div class="candle">
                                 <label for="candleZ">Candle Z:</label>
-                                <input type="number" id="candleZ" value="0" min="0">
+                                <div class="in-dec-container">
+                                    <button type="button" id="decrementZ">-</button>
+                                    <input type="number" id="candleZ" value="0" min="0">
+                                    <button type="button" id="incrementZ">+</button>
+                                </div>
                             </div>
                             <div class="candle">
                                 <label for="candleA">Candle A:</label>
-                                <input type="number" id="candleA" value="0" min="0">
+                                <div class="in-dec-container">
+                                    <button type="button" id="decrementA">-</button>
+                                    <input type="number" id="candleA" value="0" min="0">
+                                    <button type="button" id="incrementA">+</button>
+                                </div>
                             </div>
                         </div>
                     </div>
